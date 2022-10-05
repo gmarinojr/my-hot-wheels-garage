@@ -1,7 +1,17 @@
 module.exports = {
   siteMetadata: {
     title: `My Hot Wheels Garage`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: [],
-}
+  plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`
+      }
+    }
+  ]
+};
