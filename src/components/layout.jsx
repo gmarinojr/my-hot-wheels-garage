@@ -18,7 +18,7 @@ const Layout = ({ pageTitle, children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div className={container}>
@@ -26,17 +26,17 @@ const Layout = ({ pageTitle, children }) => {
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
+            <Link to='/' className={navLinkText}>
               Home
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
+            <Link to='/about' className={navLinkText}>
               About
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
+            <Link to='/blog' className={navLinkText}>
               Blog
             </Link>
           </li>
@@ -47,7 +47,7 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
